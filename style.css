@@ -1,0 +1,142 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    color: #1a73e8;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #202124;
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+#sbdInput {
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    flex-grow: 1;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    max-width: 400px;
+}
+
+#sbdInput:focus {
+    outline: none;
+    border-color: #1a73e8;
+}
+
+#searchBtn {
+    padding: 12px 25px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+#searchBtn:hover {
+    background-color: #1557b0;
+}
+
+.student-info, .score-info {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.info-table, .score-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.info-table th, .info-table td,
+.score-table th, .score-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.info-table th {
+    color: #5f6368;
+    font-weight: 500;
+    width: 40%;
+}
+
+.score-table th {
+    background-color: #f8f9fa;
+    color: #202124;
+    font-weight: 500;
+}
+
+.score-table td {
+    font-weight: 500;
+    color: #202124;
+}
+
+#resultContainer p {
+    font-size: 16px;
+    color: #5f6368;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+#resultContainer p[style*="color: red"] {
+    background-color: #fce8e6;
+    border: 1px solid #fad2cf;
+}
+
+#resultContainer p[style*="color: orange"] {
+    background-color: #fef7e0;
+    border: 1px solid #fbe6c2;
+} 
